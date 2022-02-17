@@ -26,19 +26,16 @@
 ```vhdl
     p_stimulus : process
     begin
-        begin
     	-- Report a note at the beginning of stimulus process
         report "Stimulus process started" severity note;
-        -- Set one test case and wait 100 ns
+        
         s_b <= "0100"; s_a <= "0100"; wait for 100 ns;
-        s_b <= "0100"; s_a <= "0101"; wait for 100 ns;
-        s_b <= "0101"; s_a <= "0100"; wait for 100 ns;
-        wait;
-        assert ((s_B_greater_A = '1') and
+        assert ((s_B_greater_A = '0') and
                 (s_B_equals_A  = '1') and
-                (s_B_less_A    = '1'))
+                (s_B_less_A    = '0'))
         -- If false, then report an error
-        report "Input combination 00, 00 FAILED" severity error;
+        report "Input combination 0100, 0100 FAILED" severity error;
+        
 
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
