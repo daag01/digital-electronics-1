@@ -53,9 +53,11 @@
 
 2. Text console screenshot during your simulation, including reports.
 
-   ![cviko2DE_3](https://user-images.githubusercontent.com/99388268/154485005-f45ad346-4935-4d90-b1dc-c0e517b7aa04.png)
+   ![cviko2DE_4](https://user-images.githubusercontent.com/99388268/154489326-a1b2cdb3-f64c-4a22-892d-a60a30fd79af.png)
+
 
 
 3. Link to your public EDA Playground example:
 
    [https://www.edaplayground.com/x/miVS](https://www.edaplayground.com/x/miVS)
+-
