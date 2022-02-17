@@ -31,6 +31,8 @@
         report "Stimulus process started" severity note;
         -- Set one test case and wait 100 ns
         s_b <= "0100"; s_a <= "0100"; wait for 100 ns;
+        s_b <= "0100"; s_a <= "0101"; wait for 100 ns;
+        s_b <= "0101"; s_a <= "0100"; wait for 100 ns;
         wait;
         assert ((s_B_greater_A = '1') and
                 (s_B_equals_A  = '1') and
