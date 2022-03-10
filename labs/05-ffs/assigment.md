@@ -21,12 +21,6 @@ In this laboratory exercise, you will study the differences between a statically
 ### Table of contents
 
 * [Preparation tasks](#preparation)
-* [Part 1: Synchronize Git and create a new folder](#part1)
-* [Part 2: D latch](#part2)
-* [Part 3: VHDL code for flip-flops](#part3)
-* [Experiments on your own](#experiments)
-* [Lab assignment](#assignment)
-* [References](#references)
 
 <a name="preparation"></a>
 
