@@ -38,7 +38,7 @@ In this laboratory exercise, you will study the differences between a statically
    **D-type FF**
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633304-c5a939dd-4aae-456e-92f1-67a1050b9faa.png) | 0 | 0 | 0 | `q(n+1)` has the same level as `d` |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 0 | 0 | `q(n+1)` has the same level as `d` |
    | ![rising](images/eq_uparrow.png) | 0 | 1 |  |  |
    | ![rising](images/eq_uparrow.png) | 1 |  |  |  |
    | ![rising](images/eq_uparrow.png) | 1 |  |  |  |
