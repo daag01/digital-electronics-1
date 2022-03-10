@@ -39,28 +39,28 @@ In this laboratory exercise, you will study the differences between a statically
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
    | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 0 | 0 | `q(n+1)` has the same level as `d` |
-   | ![rising](images/eq_uparrow.png) | 0 | 1 |  |  |
-   | ![rising](images/eq_uparrow.png) | 1 |  |  |  |
-   | ![rising](images/eq_uparrow.png) | 1 |  |  |  |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 1 |  |  |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 |  |  |  |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 |  |  |  |
 
    **JK-type FF**
    | **clk** | **j** | **k** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-: | :-- |
-   | ![rising](images/eq_uparrow.png) | 0 | 0 | 0 | 0 | Output did not change |
-   | ![rising](images/eq_uparrow.png) | 0 | 0 | 1 | 1 | Output did not change |
-   | ![rising](images/eq_uparrow.png) | 0 |  |  |  |  |
-   | ![rising](images/eq_uparrow.png) | 0 |  |  |  |  |
-   | ![rising](images/eq_uparrow.png) | 1 |  |  |  |  |
-   | ![rising](images/eq_uparrow.png) | 1 |  |  |  |  |
-   | ![rising](images/eq_uparrow.png) | 1 |  |  |  |  |
-   | ![rising](images/eq_uparrow.png) | 1 |  |  |  |  |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 0 | 0 | 0 | Output did not change |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 0 | 1 | 1 | Output did not change |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 |  |  |  |  |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 |  |  |  |  |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 |  |  |  |  |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 |  |  |  |  |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 |  |  |  |  |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 |  |  |  |  |
 
    **T-type FF**
    | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
-   | ![rising](images/eq_uparrow.png) | 0 | 0 | 0 | Output did not change |
-   | ![rising](images/eq_uparrow.png) | 0 | 1 |  |  |
-   | ![rising](images/eq_uparrow.png) | 1 |  |  |  |
-   | ![rising](images/eq_uparrow.png) | 1 |  |  |  |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 0 | 0 | Output did not change |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 1 |  |  |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 |  |  |  |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 |  |  |  |
 
 <a name="part1"></a>
