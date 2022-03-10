@@ -1,66 +1,37 @@
-# Lab 5: Latches and Flip-flops
+# Lab 5: David Fedor
 
-<!--
-![Logo](../../logolink_eng.jpg)
-<p align="center">
-  The Study of Modern and Developing Engineering BUT<br>
-  CZ.02.2.69/0.0/0.0/18_056/0013325
-</p>
--->
+### Flip-flops
 
-### Learning objectives
+1. Listing of VHDL architecture for T-type flip-flop. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
-After completing this lab you will be able to:
+```vhdl
+architecture Behavioral of t_ff_rst is
+    signal s_q : std_logic;
+begin
+    --------------------------------------------------------
+    -- p_t_ff_rst:
+    -- T type flip-flop with a high-active sync reset,
+    -- rising-edge clk.
+    -- q(n+1) = t./q(n) + /t.q(n)
+    --------------------------------------------------------
+    p_t_ff_rst : process(clk)
+    begin
 
-* Use latches and flip-flops
-* Use VHDL synchronous processes
-* Understand the asynchronous and synchronous resets
+        -- WRITE YOUR CODE HERE
 
-In this laboratory exercise, you will study the differences between a statically controlled latch and flip-flops that are synchronized with a clock signal. In VHDL, combinational and synchronous processes will be used and the difference between asynchronous and synchronous reset will be illustrated.
+    end process p_t_ff_rst;
 
-### Table of contents
+    q     <= s_q;
+    q_bar <= not s_q;
+end architecture Behavioral;
+```
 
-* [Preparation tasks](#preparation)
+2. Screenshot with simulated time waveforms. Try to simulate both flip-flops in a single testbench with a maximum duration of 200 ns, including reset. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-<a name="preparation"></a>
+   ![your figure]()
 
-## Preparation tasks (done before the lab at home)
+### Shift register
 
-1. Write characteristic equations and complete truth tables for D, JK, T flip-flops where `q(n)` represents main output value before the clock edge and `q(n+1)` represents output value after the clock edge.
-   https://editor.codecogs.com/
-   \begin{align*}
-       q_{n+1}^D =&~D \\
-       q_{n+1}^{JK} =& \\
-       q_{n+1}^T =& \\
-   \end{align*}
-   -->
+1. Image of the shift register block schematic. The image can be drawn on a computer or by hand. Always name all inputs, outputs, components and internal signals!
 
-   **D-type FF**
-   | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
-   | :-: | :-: | :-: | :-: | :-- |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 0 | 0 | `q(n+1)` has the same level as `d` |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 1 | 0 | `q(n+1)` has the same level as `d` |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 | 0 | 1 | `q(n+1)` has the same level as `d` |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 | 1 | 1 | `q(n+1)` has the same level as `d` |
-
-   **JK-type FF**
-   | **clk** | **j** | **k** | **q(n)** | **q(n+1)** | **Comments** |
-   | :-: | :-: | :-: | :-: | :-: | :-- |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 0 | 0 | 0 | Output did not change |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 0 | 1 | 1 | Output did not change |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 1 | 0 | 0 | Reset |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 1 | 1 | 0 | Reset |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 | 0 | 0 | 1 | Set |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 | 1 | 0 | 1 | Toggle |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 | 0 | 1 | 1 | Set |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 | 1 | 1 | 0 | Toggle |
-
-   **T-type FF**
-   | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
-   | :-: | :-: | :-: | :-: | :-- |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 0 | 0 | Output did not change |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 1 | 1 | Output did not change |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 | 0 | 1 | Invert(toggle) |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 | 1 | 0 | Invert(toggle) |
-
-<a name="part1"></a>
+   ![your figure]()
