@@ -48,7 +48,7 @@ In this laboratory exercise, you will study the differences between a statically
    | :-: | :-: | :-: | :-: | :-: | :-- |
    | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 0 | 0 | 0 | Output did not change |
    | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 0 | 1 | 1 | Output did not change |
-   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 0 | 1 | 1 |  |
+   | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 1 | 0 | 0 |  |
    | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 0 | 1 | 1 | 0 |  |
    | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 | 0 | 0 | 1 |  |
    | ![eq_uparrow](https://user-images.githubusercontent.com/99388268/157633413-06af8354-1297-49af-8c8d-4fc41120f777.png) | 1 | 1 | 0 | 1 |  |
