@@ -12,6 +12,8 @@ The Nexys A7 board provides five push buttons for user applications.
    &nbsp;
    1/10^8=10ns
    &nbsp;
+   
+
    --Number of periods
    (2*10^-3)/(10^-8)=200k
    &nbsp;
