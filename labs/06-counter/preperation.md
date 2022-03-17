@@ -10,10 +10,10 @@ The Nexys A7 board provides five push buttons for user applications.
 
    --Tclk
    &nbsp;
-   ![clock period](https://github.com/VadovicSamuel/Digital-Electronics-1/blob/main/labs/06-counter/Tclk.png)
+   1/10^8=10ns
    &nbsp;
    --Number of periods
-   ![number of periods](https://github.com/VadovicSamuel/Digital-Electronics-1/blob/main/labs/06-counter/numberofclkT.png)
+   (2*10^-3)/(10^-8)=200k
    &nbsp;
    <!--
    https://editor.codecogs.com/
