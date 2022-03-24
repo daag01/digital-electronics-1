@@ -5,7 +5,7 @@ Consider the clock enable circuit from previous laboratories and find out the va
 
    | **Frequency** | **Number of clk periods (g_MAX)** | **Number of clk periods in hex** | **Number of clk periods in binary** |
    | :-: | :-: | :-: | :-: |
-   | 100&nbsp;Hz |10ms | Ams |
-   | 1000&nbsp;Hz | 1ms | 1ms |
+   | 100&nbsp;Hz |10ms | Ams |  1010ms
+   | 1000&nbsp;Hz | 1ms | 1ms | 1ms
 
 
