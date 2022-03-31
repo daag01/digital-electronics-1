@@ -37,7 +37,6 @@
                         end if;
 
                     when WEST_GO =>
-                        -- WRITE OTHER STATES HERE
                         if (s_cnt < c_DELAY_4SEC) then
                             s_cnt <= s_cnt + 1;
                         else
@@ -47,7 +46,6 @@
                             s_cnt <= c_ZERO;
                         end if;
                     when WEST_WAIT =>
-                        -- WRITE OTHER STATES HERE
                         if (s_cnt < c_DELAY_2SEC) then
                             s_cnt <= s_cnt + 1;
                         else
@@ -57,7 +55,6 @@
                             s_cnt <= c_ZERO;
                         end if;
                     when STOP2 =>
-                        -- WRITE OTHER STATES HERE
                         if (s_cnt < c_DELAY_1SEC) then
                             s_cnt <= s_cnt + 1;
                         else
@@ -67,7 +64,6 @@
                             s_cnt <= c_ZERO;
                         end if;
                     when SOUTH_GO =>
-                        -- WRITE OTHER STATES HERE
                         if (s_cnt < c_DELAY_4SEC) then
                             s_cnt <= s_cnt + 1;
                         else
@@ -77,7 +73,6 @@
                             s_cnt <= c_ZERO;
                         end if;
                     when SOUTH_WAIT =>
-                        -- WRITE OTHER STATES HERE
                         if (s_cnt < c_DELAY_2SEC) then
                             s_cnt <= s_cnt + 1;
                         else
@@ -86,10 +81,6 @@
                             -- Reset local counter value
                             s_cnt <= c_ZERO;
                         end if;
-
-                    -- It is a good programming practice to use the 
-                    -- OTHERS clause, even if all CASE choices have 
-                    -- been made.
                     when others =>
                         s_state <= STOP1;
                         s_cnt   <= c_ZERO;
